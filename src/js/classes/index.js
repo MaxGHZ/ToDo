@@ -1,4 +1,4 @@
 
-export { ToDo } from './to-do.class.js'
-export { ToDoList } from './to-do.list.js'
+export { Todo } from './to-do.class.js'
+export { TodoList } from './to-do.list.js'
 
