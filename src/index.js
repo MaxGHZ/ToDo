@@ -1,12 +1,14 @@
 import './styles.css'
 import {Todo,TodoList} from './js/classes'
+import {createHtmlTodo} from './js/components.js'
 
-const todoList = new TodoList()
+export const todoList = new TodoList()
 
-const tarea1 = new Todo('Aprender Js')
-const tarea2 = new Todo('Aprender Js + react')
+todoList.todos.forEach( createHtmlTodo)
 
-todoList.newTodo(tarea1)
-todoList.newTodo(tarea2)
 
-console.log(todoList)
+
+// localStorage.setItem('my-key','MAX123') //aqui la informacion dura mucho mas, hasta puedes reiniciar la pc y la info seguiria ahi
+// // sessionStorage.setItem('my-key','MAX123') Es lo mismo pero si se cierra el navegador se borra
+
+
